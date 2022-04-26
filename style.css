@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ef233c;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+.witchery {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #2b2d42;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #edf2f4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* Links sind nicht mehr unterstrichen */
+}
+
+/* Wenn der Mauszeiger über dem Link ist, Farbe ändern */
+.navbar a:hover {
+    background-color: #101119;
+    color: #edf2f4;
+}
+
+.column3 {
+    margin-top: 10px;
+    border: solid 1px #101119;
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    background-color: #edf2f4;
+}
+
+.column2 {
+    margin-top: 15px;
+    border: solid 1px #101119;
+    float: left;
+    width: 50%;
+    padding: 15px;
+    background-color: #edf2f4;
+}
+
+.centercontent {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Ungleiche Anordnung für Inhalt/Zusatzinformationen */
+.leftcolumn {
+    float: left;
+    width: 75%;
+    margin-top: 15px;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: #edf2f4;
+    padding: 20px;
+    margin-top: 15px;
+    border: solid 1px #101119;
+}
+
+.rightspace {
+    margin-inside: 10px;
+}
+
+/* Text Style */
+.centered {
+    text-align: center;
+}
+.underline {
+    text-decoration: underline;
+}
+.italics {
+    font-style: italic;
+}
+.important {
+    color: #ef233c;
+}
+
+/* Tabellen */
+
+.tg  {border-collapse:collapse;border-spacing:0;background-color: #edf2f4}
+.tg td{border-color:black;border-style:solid;border-width:1px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-kndx{background-color:#34ff34;text-align:center;vertical-align:top}
+.tg .tg-blue{background-color:#38fff8;text-align:center;vertical-align:top}
