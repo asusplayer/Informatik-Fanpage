@@ -2,10 +2,32 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 980px) {  
+    html, body {
+      display: none;
+     }
+    }
+
 body {
-    background-color: #ef233c;
+    background: linear-gradient(-45deg, #2b2d42, #ef233c, #2b2d42, #ef233c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .witchery {
@@ -56,6 +78,18 @@ body {
     border: none;
     display: flex;
     justify-content: center;
+}
+
+.row2 {
+    display: flex; /* equal height of the children */
+}
+
+.col {
+    flex: 1; /* additionally, equal width */
+    margin-top: 10px;
+    border: solid 1px #101119;
+    background-color: #edf2f4;
+    padding: 15px;
 }
 
 .row:after {
